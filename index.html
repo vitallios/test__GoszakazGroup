@@ -2,104 +2,152 @@
 <html lang="ru">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
- <title>Goszakaz Group</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Goszakaz Group</title>
 </head>
 
 <body>
 
- <header class="header">
-  <div class="container header__wrap">
-   <nav class="vFlexRow header__nav" aria-label="header">
-    <a href="/" id="logo" class="header__logo">
-     <img src="./assets/images/logo.svg" alt="">
-    </a>
+  <header class="header">
+    <div class="container header__wrap">
+      <nav class="vFlexRow header__nav" aria-label="header">
+        <a href="/" id="logo" class="header__logo">
+          <img src="./assets/images/logo.svg" alt="">
+        </a>
 
-    <ul id="menu" class="header__menu vFlexRow menu">
-     <li><a href="/">Главная</a></li>
-     <li><a href="/">О нас</a></li>
-     <li><a href="/">Контакты</a></li>
-     <li><a href="/">Поиск</a></li>
-     <li><a href="tel:+79878878787" class="vFlexRow">
-       <img src="./assets/images/icon-phone.svg" alt="iconPhone">
-       <span>+7 (987) 887-87-87</span>
-      </a></li>
-    </ul>
-   </nav>
-  </div>
- </header>
+        <ul id="menu" class="header__menu vFlexRow menu">
+          <li><a href="/">Главная</a></li>
+          <li><a href="/">О нас</a></li>
+          <li><a href="/">Контакты</a></li>
+          <li><a href="/">Поиск</a></li>
+          <li><a href="tel:+79878878787" class="vFlexRow">
+              <img src="./assets/images/icon-phone.svg" alt="iconPhone">
+              <span>+7 (987) 887-87-87</span>
+            </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
- <main id="main">
-  <!--  -->
-  <div class="main__wrap">
-   <!--  -->
-   <section class="baner"></section>
-   <!--  -->
-   <div class="container ">
-    <seaction class="pages">
-     <seaction class="page__sait-bar saitBar">
-      <h3>Популярные новости</h3>
-      <ul class="saitBar__list">
-       <li>
-        <h4>ITAM&SAMDay – самая настоящая удача!</h4>
-        <span>13 дек 2020</span>
-       </li>
-       <li>
-        <h4>Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
-        <span>10 дек 2020</span>
-       </li>
-       <li>
-        <h4>Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
-        <span>5 дек 2020</span>
-       </li>
-      </ul>
-      <div>
-       <form>
-        <p>Подписка на рассылку</p>
-        <input type="email" placeholder="Email@gmail.com">
-        <button>
-         Подписаться
-         <img src="./assets/images/icon-go.svg" alt="icon_go">
-        </button>
-       </form>
+  <main id="main">
+    <!--  -->
+    <div class="main__wrap">
+      <!--  -->
+      <section class="baner"></section>
+      <!--  -->
+      <div class="container ">
+        <seaction class="pages">
+          <seaction class="page__sait-bar saitBar">
+            <h3>Популярные новости</h3>
+            <ul class="saitBar__list">
+              <li>
+                <h4>ITAM&SAMDay – самая настоящая удача!</h4>
+                <span>13 дек 2020</span>
+              </li>
+              <li>
+                <h4>Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого
+                  спросить ...</h4>
+                <span>10 дек 2020</span>
+              </li>
+              <li>
+                <h4>Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
+                <span>5 дек 2020</span>
+              </li>
+            </ul>
+            <div>
+              <form>
+                <h3>Подписка на рассылку</h3>
+                <input type="email" placeholder="Email@gmail.com">
+                <button>
+                  Подписаться
+                  <img src="./assets/images/icon-go.svg" alt="icon_go">
+                </button>
+              </form>
+            </div>
+          </seaction>
+          <seaction class="page__post ">
+            <ul class="post__list">
+              <li class="post__item item__full">
+                <!--  -->
+                <a href="/">
+                  <div>
+                    <button class="post__item__category">Категория 1</button>
+                    <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                    <p>Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по ИТ-мощностям в
+                      крупной компании периодически готовил толстенный отчёт руководству. В очередной раз он не принёс
+                      отчёт, решив проверить, нужен ли он вообще.</p>
+                  </div>
+                  <span>13 дек 2020</span>
+                </a>
+                <!--  -->
+              </li>
+
+
+              
+              <li class="post__item item__grid">
+                <a href="/" class="post__item__img">
+                  <button class="post__item__category">Очень длинная категория 2</button>
+                  <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                  <span>13 дек 2020</span>
+                </a>
+                <div>
+                  <a href="/">
+                    <div>
+                      <button class="post__item__category">Категория 1</button>
+                      <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                    </div>
+                    <span>13 дек 2020</span>
+                  </a>
+                  <a href="/">
+                    <div>
+                      <button class="post__item__category">Категория 1</button>
+                      <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                    </div>
+                    <span>13 дек 2020</span>
+                  </a>
+
+                </div>
+              </li>
+              <li class="post__item">
+                <a href="/">
+                  <div>
+                    <button class="post__item__category">Категория 1</button>
+                    <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                  </div>
+                  <span>13 дек 2020</span>
+                </a>
+              </li>
+            </ul>
+          </seaction>
+        </seaction>
       </div>
-     </seaction>
-     <seaction class="page__saitBar">
-      <div class="post__1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit ipsa, vero consequuntur iure officiis labore ducimus libero iusto quia quo nesciunt reiciendis. Necessitatibus assumenda voluptatibus modi odio pariatur, laudantium molestias.</div>
-      <div class="post__1"></div>
-      <div class="post__1"></div>
-      <div class="post__1"></div>
-      <div class="post__1"></div>
-     </seaction>
-    </seaction>
-   </div>
-   <!--  -->
-  </div>
-  <!--  -->
- </main>
+      <!--  -->
+    </div>
+    <!--  -->
+  </main>
 
- <footer id="footer">
-  <div class="container footer__wrap">
-   <nav class="vFlexRow footer__nav" aria-label="footer">
-    <a href="/" id="footer_logo" class="footer__logo">
-     <img src="#" alt="">
-    </a>
+  <footer id="footer">
+    <div class="container footer__wrap">
+      <nav class="vFlexRow footer__nav" aria-label="footer">
+        <a href="/" id="footer_logo" class="footer__logo">
+          <img src="#" alt="">
+        </a>
 
-    <ul id="footer__menu" class="footer__menu vFlexRow menu">
-     <li><a href="/">О нас</a></li>
-     <li><a href="/">Галерея</a></li>
-     <li><a href="/">Новости</a></li>
-     <li><a href="/">Контакты</a></li>
-    </ul>
-   </nav>
-   <p class="footer__info">ООО “Организация” 2020. Все права защищены</p>
-  </div>
- </footer>
+        <ul id="footer__menu" class="footer__menu vFlexRow menu">
+          <li><a href="/">О нас</a></li>
+          <li><a href="/">Галерея</a></li>
+          <li><a href="/">Новости</a></li>
+          <li><a href="/">Контакты</a></li>
+        </ul>
+      </nav>
+      <p class="footer__info">ООО “Организация” 2020. Все права защищены</p>
+    </div>
+  </footer>
 
 
- <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
