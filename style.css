@@ -1,0 +1,60 @@
+:root{
+ --text-color: #2F2222;
+ --text-color-light: rgba(47, 34, 34, 0.4);
+ --text-color-akcent: #5D71DD;
+ --btn-bg: #7D8DE4;
+ --btn-color: #fff;
+ --btn-hover: #6C7DD8;
+}
+
+@font-face {
+ font-family: 'FuturaPTBook';
+ src: url('./assets/futura-book/FuturaPTBook.otf');
+}
+@font-face {
+ font-family: 'FuturaPTHeavy';
+ src: url('./assets/futura-book/FuturaPTHeavy.otf');
+}
+@font-face {
+ font-family: 'FuturaPTMedium';
+ src: url('./assets/futura-book/FuturaPTMedium.otf');
+}
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ font-family: 'FuturaPTBook', sans-serif;
+ font-weight: 400;
+ color: var(--text-color);
+ font-size: 16px;
+}
+
+.container{
+ max-width: 1900px;
+ margin: 0 auto;
+ padding: 0 10px;
+}
+ul,li{
+ list-style: none;
+ margin: 0;
+}
+a{
+ text-decoration: none;
+ color: var(--text-color);
+}
+.vFlexRow{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-content: center;
+ align-items: center;
+}
+
+.boxShadowHover{
+ box-shadow: 4px 8px 40px rgba(8, 24, 111, 20%);
+}
