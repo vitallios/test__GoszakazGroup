@@ -29,6 +29,7 @@
  padding: 0;
  box-sizing: border-box;
  transition: all 0.3s ease;
+ line-height: 1.4;
 }
 button{
  outline: none;
@@ -188,7 +189,11 @@ a{
 
 
 
-
+.post__list{
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+}
 .item__full{
  background-color: var(--global-bg);
  min-height: 280px;
@@ -221,7 +226,8 @@ position: relative;
  margin-top: 30px;
 
 }
-.item__full>a>div>button{
+.item__full>a>div>.post__item__category,
+.item__flex>.post__item__post>.post__item__category{
  padding: 8px 16px;
  background-color: var(--global-color);
  color: var(--text-color-akcent);
@@ -231,10 +237,23 @@ position: relative;
  -ms-border-radius: 8px;
  -o-border-radius: 8px;
 }
-.item__full>a>div>button:hover{
+.item__full>a>div>.post__item__category:hover,
+.item__flex>.post__item__post>.post__item__category:hover{
  background-color: var(--btnPost-hover);
 }
-
+.item__flex>.post__item__akcent>.post__item__category{
+ padding: 8px 16px;
+ border-radius: 8px;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ -ms-border-radius: 8px;
+ -o-border-radius: 8px;
+ background-color: var(--btn-bg);
+ color: var(--global-color);
+}
+.item__flex>.post__item__akcent>.post__item__category:hover{
+ background-color: var(--text-color-light);
+}
 .item__full>a>div>p{
  margin-top: 20px;
  font-size: 18px;
@@ -243,3 +262,63 @@ position: relative;
  max-width: 880px;
 }
 
+
+.item__flex{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ gap: 40px;
+
+}
+.post__item__post{
+ flex: 2;
+ max-width: 680px;
+ background-color: var(--global-bg);
+ padding: 40px;
+ border-radius: 20px;
+ -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+ -ms-border-radius: 20px;
+ -o-border-radius: 20px;
+ transition: all 0.3s ease;
+ position: relative;
+}
+.post__item__post:hover{
+ box-shadow: var(--item-hover);
+}
+.post__item__post>h3{
+  margin-top: 30px;
+}
+.post__item__post>p{
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--text-color-light);
+}
+.post__item__post>span{
+ position: absolute;
+ top: 40px;
+ right: 40px;
+ color: var(--text-color-light);
+}
+.post__item__akcent{
+ padding: 40px 30px;
+ border-radius: 20px;
+ -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+ -ms-border-radius: 20px;
+ -o-border-radius: 20px;
+ transition: all 0.3s ease;
+ background-color: var(--text-color-akcent);
+ flex: 1;
+ max-width: 320px;
+ height: 400px;
+ color: var(--global-color);
+ display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.post__item__akcent>h3{
+ margin-top: 30px;
+ font-weight: 300;
+ flex: 3;
+}
