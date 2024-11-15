@@ -1,101 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
- <link rel="stylesheet" href="./../style.css">
- <link rel="stylesheet" href="./stylePost.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post 1</title>
+  <link rel="stylesheet" href="./../style.css">
+  <link rel="stylesheet" href="./stylePost.css">
 </head>
+
 <body>
- <header class="header">
-  <div class="container header__wrap">
-    <nav class="vFlexRow header__nav" aria-label="header">
-      <a href="/" id="logo" class="header__logo">
-        <img src="./../assets/images/logo.svg" alt="">
-      </a>
-      <button id="btnMenu">
-        <svg  viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1.56006 1H19.5601" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" />
-          <path d="M1.56006 6H19.5601" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" />
-          <path d="M1.56006 11H19.5601" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" />
-        </svg>
+  <header class="header">
+    <div class="container header__wrap">
+      <nav class="vFlexRow header__nav" aria-label="header">
+        <a href="/" id="logo" class="header__logo">
+          <img src="./../assets/images/logo.svg" alt="">
+        </a>
+        <button id="btnMenu">
+          <svg viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.56006 1H19.5601" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M1.56006 6H19.5601" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M1.56006 11H19.5601" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
 
-      </button>
+        </button>
 
-      <ul id="menu" class="header__menu vFlexRow menu">
-        <li><a href="/">Главная</a></li>
-        <li><a href="/">О нас</a></li>
-        <li><a href="/">Контакты</a></li>
-        <li><a href="/">Поиск</a></li>
-        <li><a href="tel:+79878878787" class="vFlexRow">
-            <img src="./../assets/images/icon-phone.svg" alt="iconPhone">
-            <span>+7 (987) 887-87-87</span>
-          </a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main id="post__pages">
- <div class="container">
-  <section id="post_banner"></section>
-  <seaction class="pages">
-   <seaction class="page__post ">
-    <button class="post__item__category">Категория 1</button>
-   </seaction>
-   <seaction class="page__sait-bar saitBar">
-    <div class="saitBar__wrap">
-      <h3>Популярные новости</h3>
-      <ul class="saitBar__list">
-        <li>
-          <h4>ITAM&SAMDay – самая настоящая удача!</h4>
-          <span>13 дек 2020</span>
-        </li>
-        <li>
-          <h4>Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого
-            спросить ...</h4>
-          <span>10 дек 2020</span>
-        </li>
-        <li>
-          <h4>Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
-          <span>5 дек 2020</span>
-        </li>
-      </ul>
-      <div>
-        <form>
-          <h3>Подписка на рассылку</h3>
-          <input type="email" placeholder="Email@gmail.com">
-          <button>
-            Подписаться
-            <img src="./assets/images/icon-go.svg" alt="icon_go">
-          </button>
-        </form>
-      </div>
+        <ul id="menu" class="header__menu vFlexRow menu">
+          <li><a href="/">Главная</a></li>
+          <li><a href="/">О нас</a></li>
+          <li><a href="/">Контакты</a></li>
+          <li><a href="/">Поиск</a></li>
+          <li><a href="tel:+79878878787" class="vFlexRow">
+              <img src="./../assets/images/icon-phone.svg" alt="iconPhone">
+              <span>+7 (987) 887-87-87</span>
+            </a></li>
+        </ul>
+      </nav>
     </div>
-  </seaction>
-  </seaction>
- 
- </div>
-</main>
+  </header>
 
-<footer id="footer">
-  <div class="container footer__wrap">
-    <nav class="footer__nav" aria-label="footer">
-      <a href="/" id="footer_logo" class="footer__logo">
-        <img src="./../assets/images/logo.svg" alt="">
-      </a>
+  <main id="post__pages">
+    <div class="container">
+      <section id="post__pages_banner"></section>
+      <seaction class="pages postScreen">
+        <seaction class="page__post">
+          <div class="vFlexRow page__post-info">
+            <button class="page__post-item__category">Категория 1</button>
+            <span>13 дек 2020</span>
+          </div>
+          <div class="page__post-content">
+            <h1 class="page__post-title">Управление ИТ-активами – скучная рутина или творческая задача?</h1>
+            <div class="page__post-text">
+              <div>
+                <p>Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по ИТ-мощностям в
+                  крупной компании периодически готовил толстенный отчёт руководству. В очередной раз он не принёс
+                  отчёт, решив проверить, нужен ли он вообще. Выждав несколько дней, он пришёл к руководителю и спросил:
+                  «Похоже тот отчёт, который я готовлю, не особо востребован, а что вам действительно нужно?»
+                  Руководитель признался, что массивный отчёт хороший, но им не пользуются. И набросал на листе бумаги
+                  то, что хотелось бы иметь под рукой.</p>
+                <p>Управление ИТ-активами, как и управление конфигурациями, является базовым процессом для других. В
+                  первом случае более важным является финансовый аспект, во втором – эксплуатационные задачи. Оба
+                  процесса можно перегрузить деталями и превратить во что-то рутинное. Как же найти баланс и сделать
+                  процесс по-настоящему «живым»?</p>
+                <div class="page__post-img">
+                  <img src="./../assets/images/postImg.png" alt="">
+                  <span>Учёт из рутины может превратиться в интересную задачу, своего рода «вызов» по переходу на новый
+                    уровень.</span>
+                </div>
+                <p>Конечно, баланс унификации и персонального подхода – дело каждого. Вспомним историю про послевоенное
+                  автомобилестроение: американская и японская тактика. Постепенно японцы достигли превосходства
+                  благодаря, в том числе, выверенному балансу унификации и культуре производства. Но это правило не для
+                  всех.
+                </p>
+                <p>Конечно, баланс унификации и персонального подхода – дело каждого. Вспомним историю про послевоенное
+                  автомобилестроение: американская и японская тактика. Постепенно японцы достигли превосходства
+                  благодаря, в том числе, выверенному балансу унификации и культуре производства. Но это правило не для
+                  всех.</p>
+              </div>
 
-      <ul id="footer__menu" class="footer__menu vFlexRow menu">
-        <li><a href="/">О нас</a></li>
-        <li><a href="/">Галерея</a></li>
-        <li><a href="/">Новости</a></li>
-        <li><a href="/">Контакты</a></li>
-      </ul>
-    </nav>
-    <p class="footer__info">ООО “Организация” 2020. Все права защищены</p>
-  </div>
-</footer>
+            </div>
+            <img src="./../assets/images/postBottonImg.jpg" alt="">
+          </div>
+          <div class="page__post-navigationsBtn vFlexRow">
+            <button><img src="./../assets/images/icon-left.svg" alt="">Предыдущая новость</button>
+            <button>Следующая новость<img src="./../assets/images/icon-right.svg" alt=""></button>
+          </div>
+        </seaction>
+        <seaction class="page__sait-bar saitBar">
+          <div class="saitBar__wrap">
+            <h3>Популярные новости</h3>
+            <ul class="saitBar__list">
+              <li>
+                <h4>ITAM&SAMDay – самая настоящая удача!</h4>
+                <span>13 дек 2020</span>
+              </li>
+              <li>
+                <h4>Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого
+                  спросить ...</h4>
+                <span>10 дек 2020</span>
+              </li>
+              <li>
+                <h4>Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
+                <span>5 дек 2020</span>
+              </li>
+            </ul>
+            <div>
+              <form>
+                <h3>Подписка на рассылку</h3>
+                <input type="email" placeholder="Email@gmail.com">
+                <button>
+                  Подписаться
+                  <img src="./../assets/images/icon-go.svg" alt="icon_go">
+                </button>
+              </form>
+            </div>
+          </div>
+        </seaction>
+      </seaction>
+
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="container footer__wrap">
+      <nav class="footer__nav" aria-label="footer">
+        <a href="/" id="footer_logo" class="footer__logo">
+          <img src="./../assets/images/logo.svg" alt="">
+        </a>
+
+        <ul id="footer__menu" class="footer__menu vFlexRow menu">
+          <li><a href="/">О нас</a></li>
+          <li><a href="/">Галерея</a></li>
+          <li><a href="/">Новости</a></li>
+          <li><a href="/">Контакты</a></li>
+        </ul>
+      </nav>
+      <p class="footer__info">ООО “Организация” 2020. Все права защищены</p>
+    </div>
+  </footer>
 
 </body>
+
 </html>

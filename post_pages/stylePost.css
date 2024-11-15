@@ -1,4 +1,4 @@
-#post_banner{
+#post__pages_banner {
  width: 100%;
  height: 300px;
  margin-top: 40px;
@@ -10,4 +10,82 @@
  -moz-border-radius: 20px;
  -ms-border-radius: 20px;
  -o-border-radius: 20px;
+}
+
+.postScreen {
+ justify-content: space-between;
+}
+
+.page__post-info {
+ gap: 20px;
+}
+.page__post-info>button {
+ font-size: 18px;
+ padding: 8px 16px;
+ border-radius: 8px;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ -ms-border-radius: 8px;
+ -o-border-radius: 8px;
+ color: var(--text-color-akcent);
+}
+.page__post-info>span {
+ font-size: 18px;
+ color: var(--text-color-light);
+}
+
+.page__post-content {
+ margin-top: 30px;
+ max-width: 800px;
+}
+
+.page__post-content>img {
+ margin-top: 40px;
+}
+
+.page__post-text {
+ margin-top: 30px;
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 20px;
+}
+
+.page__post-img {
+ grid-column: 2 / 4;
+ grid-row: 3 / 6;
+ display: flex;
+ float: right;
+ width: 320px;
+ flex-direction: column;
+ height: auto;
+ margin-left: 30px;
+ margin-top: 20px;
+ margin-bottom: 50px;
+}
+
+.page__post-text>div>p {
+ margin-top: 20px;
+}
+
+.page__post-img>span {
+ font-size: 14px;
+ margin-top: 10px;
+}
+
+.page__post-navigationsBtn {
+ margin-top: 60px;
+ justify-content: space-between;
+}
+.page__post-navigationsBtn>button {
+ display: flex;
+ gap: 8px;
+ align-items: center;
+ font-size: 18px;
+ padding: 8px 16px;
+ border-radius: 8px;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ -ms-border-radius: 8px;
+ -o-border-radius: 8px;
+ color: var(--text-color-akcent);
 }
