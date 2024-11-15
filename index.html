@@ -16,6 +16,14 @@
         <a href="/" id="logo" class="header__logo">
           <img src="./assets/images/logo.svg" alt="">
         </a>
+        <button id="btnMenu">
+          <svg  viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.56006 1H19.5601" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M1.56006 6H19.5601" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M1.56006 11H19.5601" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+
+        </button>
 
         <ul id="menu" class="header__menu vFlexRow menu">
           <li><a href="/">Главная</a></li>
@@ -39,52 +47,11 @@
       <!--  -->
       <div class="container ">
         <seaction class="pages">
-          <seaction class="page__sait-bar saitBar">
-            <h3>Популярные новости</h3>
-            <ul class="saitBar__list">
-              <li>
-                <h4>ITAM&SAMDay – самая настоящая удача!</h4>
-                <span>13 дек 2020</span>
-              </li>
-              <li>
-                <h4>Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого
-                  спросить ...</h4>
-                <span>10 дек 2020</span>
-              </li>
-              <li>
-                <h4>Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
-                <span>5 дек 2020</span>
-              </li>
-            </ul>
-            <div>
-              <form>
-                <h3>Подписка на рассылку</h3>
-                <input type="email" placeholder="Email@gmail.com">
-                <button>
-                  Подписаться
-                  <img src="./assets/images/icon-go.svg" alt="icon_go">
-                </button>
-              </form>
-            </div>
-          </seaction>
+
           <seaction class="page__post ">
             <ul class="post__list">
-              <li class="post__item item__full">
+              <li class="post__item" id="post-0">
                 <!--  -->
-                <a href="/">
-                  <div>
-                    <button class="post__item__category">Категория 1</button>
-                    <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
-                    <p>Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по ИТ-мощностям в
-                      крупной компании периодически готовил толстенный отчёт руководству. В очередной раз он не принёс
-                      отчёт, решив проверить, нужен ли он вообще.</p>
-                  </div>
-                  <span>13 дек 2020</span>
-                </a>
-                <!--  -->
-              </li>
-
-              <li class="post__item item__flex">
                 <a href="/" class="post__item__post">
                   <button class="post__item__category">Категория 1</button>
                   <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
@@ -93,30 +60,133 @@
                     отчёт, решив проверить, нужен ли он вообще.</p>
                   <span>13 дек 2020</span>
                 </a>
+                <!--  -->
+              </li>
+              <li class="post__item" id="post-1">
+                <a href="/" class="post__item__post">
+                  <button class="post__item__category">Категория 1</button>
+                  <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                  <p>Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по ИТ-мощностям в
+                    крупной компании периодически готовил толстенный отчёт руководству. В очередной раз он не принёс
+                    отчёт, решив проверить, нужен ли он вообще.</p>
+                  <span>13 дек 2020</span>
+                </a>
+
+              </li>
+              <li class="post__item" id="post-2">
                 <a href="/" class="post__item__akcent">
                   <button class="post__item__category">Категория 1</button>
                   <h3>ITAM&SAMDay – самая настоящая удача!</h3>
                   <span>13 дек 2020</span>
                 </a>
               </li>
-
-              <li class="post__item item__grid">
+              <!--  -->
+              <li class="post__item" id="post-3">
                 <a href="/" class="post__item__img">
+                  <button class="post__item__category">Очень длинная категория 2</button>
+                  <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                  <span>13 дек 2020</span>
+                </a>
+              </li>
+              <li class="post__item" id="post-4">
+                <a href="/" class="post__item__post">
                   <button class="post__item__category">Категория 1</button>
                   <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
                 </a>
-                <div>
-                  <a href="/" class="post__item__post">
-                    <button class="post__item__category">Категория 1</button>
-                    <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
-                  </a>
-                  <a href="/" class="post__item__post">
-                    <button class="post__item__category">Категория 1</button>
-                    <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
-                  </a>
-                </div>
+
               </li>
+              <li class="post__item" id="post-5">
+                <a href="/" class="post__item__post grid">
+                  <button class="post__item__category">Категория 1</button>
+                  <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                </a>
+              </li>
+              <!--  -->
+              <li class="post__item " id="post-6">
+                <a href="/" class="post__item__post">
+                  <button class="post__item__category">Категория 1</button>
+                  <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                  <p>Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по ИТ-мощностям в
+                    крупной компании периодически готовил толстенный отчёт руководству. В очередной раз он не принёс
+                    отчёт, решив проверить, нужен ли он вообще.</p>
+                  <span>13 дек 2020</span>
+                </a>
+
+              </li>
+              <li class="post__item grid" id="post-7">
+                <a href="/" class="post__item__akcent">
+                  <button class="post__item__category">Категория 1</button>
+                  <h3>ITAM&SAMDay – самая настоящая удача!</h3>
+                  <span>13 дек 2020</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="post__item" id="post-8">
+                <a href="/" class="post__item__img">
+                  <button class="post__item__category">Очень длинная категория 2</button>
+                  <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                  <span>13 дек 2020</span>
+                </a>
+              </li>
+              <li class="post__item" id="post-9">
+                <a href="/" class="post__item__post grid">
+                  <button class="post__item__category">Категория 1</button>
+                  <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                </a>
+
+              </li>
+              <li class="post__item" id="post-10">
+                <a href="/" class="post__item__post grid">
+                  <button class="post__item__category">Категория 1</button>
+                  <h3>Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                </a>
+              </li>
+
             </ul>
+
+            <div class="post__pagination">
+              <a href="/">1</a>
+              <a href="/">2</a>
+              <a href="/">3</a>
+              <a href="/">...</a>
+              <a href="/">5</a>
+              <button>Следующая <img src="./assets/images/icon-next.svg" alt=""></button>
+            </div>
+            <button class="post__btn__update">
+              Показать ещё
+              <img src="./assets/images/update.svg" alt="icon_go">
+            </button>
+
+          </seaction>
+          <seaction class="page__sait-bar saitBar">
+            <div class="saitBar__wrap">
+              <h3>Популярные новости</h3>
+              <ul class="saitBar__list">
+                <li>
+                  <h4>ITAM&SAMDay – самая настоящая удача!</h4>
+                  <span>13 дек 2020</span>
+                </li>
+                <li>
+                  <h4>Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого
+                    спросить ...</h4>
+                  <span>10 дек 2020</span>
+                </li>
+                <li>
+                  <h4>Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
+                  <span>5 дек 2020</span>
+                </li>
+              </ul>
+              <div>
+                <form>
+                  <h3>Подписка на рассылку</h3>
+                  <input type="email" placeholder="Email@gmail.com">
+                  <button>
+                    Подписаться
+                    <img src="./assets/images/icon-go.svg" alt="icon_go">
+                  </button>
+                </form>
+              </div>
+            </div>
           </seaction>
         </seaction>
       </div>
@@ -127,9 +197,9 @@
 
   <footer id="footer">
     <div class="container footer__wrap">
-      <nav class="vFlexRow footer__nav" aria-label="footer">
+      <nav class="footer__nav" aria-label="footer">
         <a href="/" id="footer_logo" class="footer__logo">
-          <img src="#" alt="">
+          <img src="./assets/images/logo.svg" alt="">
         </a>
 
         <ul id="footer__menu" class="footer__menu vFlexRow menu">
