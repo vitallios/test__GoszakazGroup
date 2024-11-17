@@ -122,6 +122,8 @@ a {
   width: 100%;
 }
 
+
+
 .saitBar {
   max-width: 320px;
 }
@@ -484,7 +486,7 @@ a {
 }
 
 
-@media (max-width: 1023px) {
+@media (max-width: 1025px) {
   .pages {
     flex-direction: column;
   }
