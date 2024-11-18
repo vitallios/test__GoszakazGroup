@@ -559,7 +559,7 @@ a {
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 771px) {
 
   .post__list {
     display: flex;
@@ -617,6 +617,7 @@ a {
   .header__menu.active{
     overflow: hidden;
     left: 0;
+    position: fixed;
   }
   #btnMenu{
     width: 32px;

@@ -45,7 +45,7 @@
       <seaction class="pages postScreen">
         <seaction class="page__post">
           <div class="vFlexRow page__post-info">
-            <button class="page__post-item__category">Категория 1</button>
+            <button class="page__post-item__category" data-category="Category_1">Категория 1</button>
             <span>13 дек 2020</span>
           </div>
           <div class="page__post-content">
@@ -85,8 +85,19 @@
             <img src="./../assets/images/postBottonImg.jpg" alt="">
           </div>
           <div class="page__post-navigationsBtn vFlexRow">
-            <button><img src="./../assets/images/icon-left.svg" alt="">Предыдущая новость</button>
-            <button>Следующая новость<img src="./../assets/images/icon-right.svg" alt=""></button>
+            <button>
+              <!-- <img src="./../assets/images/icon-left.svg" alt=""> -->
+              <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.413444 5.22558L5.03874 0.613083C5.19028 0.462049 5.43563 0.462303 5.58692 0.613865C5.73809 0.765407 5.7377 1.01089 5.58614 1.16205L1.23616 5.50002L5.58629 9.83797C5.73784 9.98914 5.73823 10.2345 5.58708 10.386C5.51124 10.462 5.41188 10.5 5.31253 10.5C5.21342 10.5 5.11446 10.4623 5.03876 10.3868L0.413444 5.77443C0.340456 5.70181 0.299499 5.60299 0.299499 5.50002C0.299499 5.39705 0.340573 5.29834 0.413444 5.22558Z"/>
+              </svg>
+              Предыдущая новость</button>
+            <button>
+              Следующая новость
+              <!-- <img src="./../assets/images/icon-right.svg" alt=""> -->
+              <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.58656 5.22558L0.961262 0.613083C0.80972 0.462049 0.56437 0.462303 0.413081 0.613865C0.26191 0.765407 0.2623 1.01089 0.413862 1.16205L4.76384 5.50002L0.413706 9.83797C0.262164 9.98914 0.261773 10.2345 0.412925 10.386C0.488764 10.462 0.58812 10.5 0.687475 10.5C0.786576 10.5 0.88554 10.4623 0.961243 10.3868L5.58656 5.77443C5.65954 5.70181 5.7005 5.60299 5.7005 5.50002C5.7005 5.39705 5.65943 5.29834 5.58656 5.22558Z" />
+              </svg>                
+            </button>
           </div>
         </seaction>
         <seaction class="page__sait-bar saitBar">
@@ -141,7 +152,7 @@
       <p class="footer__info">ООО “Организация” 2020. Все права защищены</p>
     </div>
   </footer>
-
+<script src="./../app.js"></script>
 </body>
 
 </html>
