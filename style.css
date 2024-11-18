@@ -640,6 +640,9 @@ a {
   .saitBar__list {
     flex-direction: column;
 }
+.baner{
+  height: 250px;
+} 
 }
 @media (max-width: 321px){
   .post__pagination{
@@ -660,5 +663,8 @@ a {
   }
   .saitBar__list>li:not(:last-child) {
     border-bottom: 1px solid var(--text-color-light);
+  }
+  .baner {
+    height: 150px;
   }
 }

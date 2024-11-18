@@ -1,0 +1,21 @@
+#category__pages_banner{
+ background-color: rgba(93, 133, 221, 5%);
+ height: 180px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: var(--text-color-akcent);
+ font-weight: 500;
+}
+
+@media (max-width: 1025px) {
+ #category__pages_banner{
+  height: 150px;
+ }
+}
+
+@media (max-width: 321px) {
+ #category__pages_banner{
+  height: 120px;
+ }
+}

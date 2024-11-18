@@ -23,6 +23,7 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    height: 300px;
 }
 
 .page__post-info {
@@ -155,6 +156,9 @@
     .page__post-navigationsBtn>button >svg>path {
         fill: var(--global-color);
     }
+    #post__pages_banner{
+        height: 250px;
+    }
 }
 
 @media (max-width: 771px) {}
@@ -162,5 +166,8 @@
 @media (max-width: 321px) {
     .page__post-img {
         width: 100%;
+    }
+    #post__pages_banner{
+        height: 150px;
     }
 }
