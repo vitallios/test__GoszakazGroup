@@ -7,8 +7,13 @@ btnMenu.addEventListener("click", () => {
 
 
 window.addEventListener("click", (e) => {
+
+  console.dir(e.target.id)
+
  const postElement = e.target
-  if (postElement.localName === "button" && postElement.offsetParent.id === "post-0") {
+  if (postElement.localName === "button" 
+    && postElement.offsetParent.id === "post-0"
+  || postElement.id === "post-0") {
       location.href = "/category__pages/";
   }
   if (postElement.localName === "a" && postElement.offsetParent.id === "post-0") {
