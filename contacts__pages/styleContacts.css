@@ -1,0 +1,116 @@
+
+body{
+ max-height: 100vh;
+}.contact__page {
+ margin: 140px auto;
+ justify-content: space-between;
+ max-width: 1160px;
+}
+.contacts__info-tel{
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ margin-top: 30px;
+}
+.contacts__info-location{
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ margin-top: 20px;
+}
+
+.contacts__info-tel>a,
+.contacts__info-location>a{
+ color: var(--text-color-akcent);
+}
+.contacts__info-socialIcon{
+ display: flex;
+ margin-top: 40px;
+ gap: 20px;
+}
+
+.contacts__forms-wrapp {
+ min-width: 560px;
+ padding: 40px 60px;
+ background-color: var(--global-color);
+ border-radius: 20px;
+ -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+ -ms-border-radius: 20px;
+ -o-border-radius: 20px;
+ box-shadow: 4px 8px 40px rgba(8, 24, 111, 20%);
+}
+
+.contacts__forms-wrapp>form{
+ margin-top: 30px;
+ display: flex;
+ flex-direction: column;
+ align-content: flex-start;
+ flex-wrap: wrap;
+ gap: 20px;
+}
+
+.contacts__forms-wrapp>form>input,
+.contacts__forms-wrapp>form>textarea{
+ width: 100%;
+ background-color: #F5F5F5;
+ padding: 14px 30px;
+ border-radius: 20px;
+ -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+ -ms-border-radius: 20px;
+ -o-border-radius: 20px;
+ border: none;
+}
+
+.contacts__forms-wrapp>form>input::placeholder,
+.contacts__forms-wrapp>form>textarea::placeholder{
+ color: rgba(47, 34, 34, 40%);
+ font-size: 18px;
+}
+
+.contacts__forms-wrapp>form>button{
+ padding: 14px 68px;
+ border-radius: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ background-color: var(--text-color-akcent);
+ font-size: 18px;
+ font-weight: 300;
+ color: var(--global-color);
+}
+
+@media (max-width: 1025px) {
+ .contacts__forms-wrapp {
+  padding: 40px 50px;
+ }
+}
+@media (max-width: 781px) {
+ .contact__page  {
+  justify-content: center;
+  gap: 60px;
+ }
+ .contacts__forms-wrapp{
+  min-width: 100%;
+ }
+ 
+}
+@media (max-width: 321px) {
+ .contacts__forms-wrapp {
+  padding: 40px 20px;
+  min-width: 100%;
+  width: 100%;
+ }
+ .contacts__forms-wrapp>form>input::placeholder,
+ .contacts__forms-wrapp>form>textarea::placeholder{
+  font-size: 1em;
+ }
+ .contact__page{
+  margin:0;
+  margin-top: 60px;
+  gap: 40px;
+ }
+ 
+}

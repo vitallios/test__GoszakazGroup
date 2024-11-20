@@ -41,6 +41,11 @@ button {
   background: none;
 }
 
+textarea {
+  outline: none;
+  border: none;
+}
+
 input {
   outline: none;
   border: none;
@@ -104,6 +109,13 @@ a {
   color: var(--text-color-akcent);
 }
 
+.header__menu>li>a {
+  font-size: 18px;
+}
+.header__menu>li>a.active {
+  text-decoration: underline;
+  color: var(--text-color-akcent);
+}
 .header__menu>li:last-child>a {
   gap: 11px;
 }
