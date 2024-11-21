@@ -13,7 +13,7 @@ window.addEventListener("click", (e) => {
   if (postElement.localName === "button" 
     && postElement.offsetParent.id === "post-0"
     || postElement.id === "post-0") {
-      location.href = "/category__pages/";
+      location.href = "https://vitallios.github.io/category__pages/";
     }
     if (postElement.localName === "a" && postElement.offsetParent.id === "post-0") {
       location.href = "/post_pages/";
